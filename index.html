@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelrhman El_khouly - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">جاري التحميل...</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">El_khouly</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-section="home">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-section="about">من أنا</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link" data-section="services">الخدمات</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-section="projects">المشاريع</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-section="contact">تواصل معي</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="greeting">
+                        <span class="greeting-text">مرحباً، أنا</span>
+                        <div class="name-container">
+                            <h1 class="hero-name" id="hero-name">Abdelrhman</h1>
+                            <div class="name-underline"></div>
+                        </div>
+                    </div>
+                    <div class="hero-title">
+                        <span class="title-line">Front-End Developer</span>
+                        <span class="title-separator">&</span>
+                        <span class="title-line">Data Analyst</span>
+                    </div>
+                    <div class="hero-motto">
+                        <p class="motto-text">
+                            <span class="motto-part">لكلا ضد أما..🌞 💪</span>
+                            <span class="motto-vs">و أما</span>
+                            <span class="motto-part">..🌚 👎</span>
+                        </p>
+                        <p class="motto-decision">و اليك القرار</p>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                            <i class="fas fa-code"></i>
+                            مشاهدة أعمالي
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                            <i class="fas fa-envelope"></i>
+                            تواصل معي
+                        </button>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" data-tooltip="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" data-tooltip="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" data-tooltip="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-bg-circle"></div>
+                        <img src="img/photo_2023-11-05_06-22-46.jpg" 
+                             alt="Abdelrhman El_khouly" 
+                             class="profile-image" 
+                             id="profile-image">
+                        <div class="profile-status">
+                            <div class="status-dot"></div>
+                            <span>متاح للعمل</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <span class="scroll-text">اسحب للأسفل</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">من أنا</h2>
+                <div class="section-subtitle">تعرف على قصتي ومهاراتي</div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <h3>مطور واجهات أمامية محترف</h3>
+                        <p>أتخصص في تطوير واجهات المستخدم التفاعلية والحديثة باستخدام أحدث التقنيات مثل React, Vue.js, و Angular. أحب تحويل التصاميم إلى تجارب رقمية مذهلة.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>محلل بيانات خبير</h3>
+                        <p>أساعد الشركات على اتخاذ قرارات مدروسة من خلال تحليل البيانات وإنشاء تقارير بصرية تفاعلية باستخدام Python, R, و أدوات التصور المتقدمة.</p>
+                    </div>
+                </div>
+                <div class="skills-container">
+                    <h3>المهارات التقنية</h3>
+                    <div class="skills-grid" id="skills-grid">
+                        <!-- Skills will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">خدماتي</h2>
+                <div class="section-subtitle">ما أقدمه لك من خدمات احترافية</div>
+            </div>
+            <div class="services-grid" id="services-grid">
+                <!-- Services will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">مشاريعي</h2>
+                <div class="section-subtitle">أحدث أعمالي وإنجازاتي</div>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="web">مواقع ويب</button>
+                <button class="filter-btn" data-filter="app">تطبيقات</button>
+                <button class="filter-btn" data-filter="data">تحليل بيانات</button>
+            </div>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">تواصل معي</h2>
+                <div class="section-subtitle">لنبدأ مشروعك القادم معاً</div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>البريد الإلكتروني</h3>
+                        <p>abdelrhman.elkhouly@email.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>الهاتف</h3>
+                        <p>+20 123 456 7890</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>الموقع</h3>
+                        <p>القاهرة، مصر</p>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">الاسم</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="form-error" id="name-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="form-error" id="email-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">الرسالة</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <div class="form-error" id="message-error"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Abdelrhman El_khouly. جميع الحقوق محفوظة.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification -->
+    <div id="notification" class="notification">
+        <div class="notification-content">
+            <i class="notification-icon"></i>
+            <span class="notification-text"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
